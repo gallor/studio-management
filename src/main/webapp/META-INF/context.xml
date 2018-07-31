@@ -1,0 +1,16 @@
+<Context>
+	<Resource 
+		name="jdbc/library" 
+		auth="Container" 
+		type="javax.sql.DataSource"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		username="java"
+		password="mysqlpassword" 
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3307/allor_studio"
+		maxActive="15" 
+		maxIdle="3"
+		jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;
+            org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer">
+	</Resource>
+</Context>
